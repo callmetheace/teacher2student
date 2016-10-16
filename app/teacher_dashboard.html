@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teacher Login</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="sign_in.html">Sign Out</a></li>
+        </ul>
+        <h3 class="text-muted">T2S</h3>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-md-12">
+          <img src = "/images/download.png" class = "img-circle">
+          <h2>Welcome Teacher,</h2>
+            <h3>Announcement</h3>
+          <table id="message" class="table table-bordered">
+            <tr>
+              <th>Message</th>
+            </tr>
+            <tr>
+              <td><textarea rows="4" cols="50"></textarea><br/><input type="submit" name="submit"></td>
+            </tr>
+          </table>
+           <h3>Mark Attendance</h3>
+          <table id="attendance" class="table table-bordered">
+            <tr>
+              <th></th>
+              <th>Date</th>
+              <th>Class</th>
+              <th>Status</th>
+              <th>Teacher</th>
+              <th>Student</th>
+            </tr>
+          </table>
+          <h3>View Students</h3>
+           <table id="student" class="table table-bordered">
+              <tr>
+                <th>School</th>
+                <th>Name</th>
+                <th>Email</th>
+              </tr>
+           </table>
+
+          <h3>View Classes</h3>
+          <table id="classes" class="table table-bordered">
+            <tr>
+              <th>School</th>
+              <th>Name</th>
+              <th>Year</th>
+              <th>Semester</th>
+              <th>Teacher</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+            <div class="footer col-md-12">
+      <div class="col-md-8">
+        <p>From Education Connection  ♥  Coded From Scratch</p>
+
+        <ul id="social">
+          <li><img src="/images/facebook.png" /></li>
+          <li><img src="/images/twitter.png" /></li>
+          <li><img src="/images/google.png" /></li>
+          <li><img src="/images/youtube.png" /></li>
+        </ul>
+      </div>
+      <div class="col-md-4 right-footer">
+        <p>Call Support: 1-800-212-3443</p>
+        <p>info@teachers2students.com</p>
+        <img src="/images/nodejs.jpg">
+      </div>
+    </div>
+      <div class="col-md-12">
+        <p id="copyright">&copy; 2016 Teachers 2 Students All Rights Reserved</p>
+      </div>
+    </div>
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js">
+
+    </script>
+    <!-- endbuild -->
+
+    <script>
+     $( document ).ready(function(){
+         console.log("document loaded");
+    });
+     $( document ).ready( getTeacher );
+     $( document ).ready( getStudent );
+     $( document ).ready( getClasses );
+     $( document ).ready( getSchools );
+     $( document ).ready( markAttendance );
+    </script>
+  
+  </body>
+</html>
